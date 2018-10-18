@@ -22,21 +22,46 @@ $(document).ready(function () {
     </script>
 	<script type="text/javascript">
 		
-		var OSName = "Unknown";
-		if (window.navigator.userAgent.indexOf("Windows NT 10.0")!= -1) OSName="Window";
-		else if (window.navigator.userAgent.indexOf("Windows NT 6.2") != -1) OSName="Windows";
-		else if (window.navigator.userAgent.indexOf("Windows NT 6.1") != -1) OSName="Windows";
-		else if (window.navigator.userAgent.indexOf("Windows NT 6.0") != -1) OSName="Windows";
-		else if (window.navigator.userAgent.indexOf("Windows NT 5.1") != -1) OSName="Windows";
-		else if (window.navigator.userAgent.indexOf("Windows NT 5.0") != -1) OSName="Windows";
-		else if (window.navigator.userAgent.indexOf("Mac")            != -1) OSName="Mac/iOS";
-		else if (window.navigator.userAgent.indexOf("X11")            != -1) OSName="UNIX";
-		else if (window.navigator.userAgent.indexOf("Linux")          != -1) OSName="Linux";
+		function getOS() {
+  var userAgent = window.navigator.userAgent,
+      platform = window.navigator.platform,
+      macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+      windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+      iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+      os = null;
+
+  if (macosPlatforms.indexOf(platform) !== -1) {
+    os = 'Mac OS';
+  } else if (iosPlatforms.indexOf(platform) !== -1) {
+    os = 'iOS';
+  } else if (windowsPlatforms.indexOf(platform) !== -1) {
+    os = 'Windows'
+  } else if (/Android/.test(userAgent)) {
+    os = 'Android';
+  } else if (!os && /Linux/.test(platform)) {
+    os = 'Linux';
+  }
+
+  return os;
+			
+}
+	alert(getOS());	
 		
-		
-		if (OSName = "Windows"){
-		document.write("hi");
-$("link").attr('href',"https://example.com")
+		if (getOS = "Windows"){
+	$(document).ready (function () {
+		$('#link').one ('click', function (e) {
+        this.href = "http://www.google.com";
+    	});
+	});
+	}
+			else{
+				
+				$(document).ready (function () {
+					$('#link').one ('click', function (e) {
+                	this.href = "http://www.youtube.com";
+        
+    				});
+				});
 
 		}
 	</script>
@@ -53,26 +78,7 @@ $("link").attr('href',"https://example.com")
             <iframe width="700" height="400" src="https://www.youtube.com/embed/MLydVTTh53M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>  
       </div>
-<script type="text/javascript">
-		if (OSName=="Windows"){
 
-    $('#link').one ('click', function (e) {
-        //e.preventDefault();
-        this.href = "http://www.google.com";
-        //$(this).click();
-    });
-}
-			else  {
-				
-				$(document).ready (function () {
-					$('#link').one ('click', function (e) {
-                	this.href = "http://www.youtube.com";
-        
-    				});
-				});
-
-		}
-	</script>
         <div class="container steam text-center" id="fade" >
             <a href ="https://www.w3schools.com/jsref/jsref_if.asp"  id="link" target="_blank">Play Now!</a>
         </div>
