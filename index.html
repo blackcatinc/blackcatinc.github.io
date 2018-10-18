@@ -33,13 +33,15 @@ $(document).ready(function () {
 		else if (window.navigator.userAgent.indexOf("X11")            != -1) OSName="UNIX";
 		else if (window.navigator.userAgent.indexOf("Linux")          != -1) OSName="Linux";
 		
+		
 		if (OSName = "Windows"){
-		$(document).ready(function(){
-	     $("#link").attr("href", "https://www.w3schools.com/jquery/");})
+		document.write("hi");
+$("link").attr('href',"https://example.com")
+
 		}
 	</script>
 	
-	
+
     <title>JYST</title>
 </head>
 
@@ -51,9 +53,28 @@ $(document).ready(function () {
             <iframe width="700" height="400" src="https://www.youtube.com/embed/MLydVTTh53M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>  
       </div>
+<script type="text/javascript">
+		if (OSName=="Windows"){
 
+    $('#link').one ('click', function (e) {
+        //e.preventDefault();
+        this.href = "http://www.google.com";
+        //$(this).click();
+    });
+}
+			else{
+				
+				$(document).ready (function () {
+					$('#link').one ('click', function (e) {
+                	this.href = "http://www.youtube.com";
+        
+    				});
+				});
+
+		}
+	</script>
         <div class="container steam text-center" id="fade" >
-            <a href ="https://store.steampowered.com/app/265930/Goat_Simulator/" id="link" target="_blank">Play Now!</a>
+            <a href ="https://www.w3schools.com/jsref/jsref_if.asp"  id="link" target="_blank">Play Now!</a>
         </div>
         <div class="jyst"> <a href="team.html" target="_blank">   
         <img src="images/jyst-social-square.jpg" style="height: 39px; width: 75px; margin-right: 0px"/></a></div>
