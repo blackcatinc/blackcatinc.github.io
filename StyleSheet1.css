@@ -37,7 +37,7 @@ h1{
 }
 .jyst {
     float:center;
-    position:absolute;
+    position:fixed;
     margin-bottom:0px;
     top: 926px;
     left: 0px;
@@ -58,4 +58,13 @@ h1{
 
 #fade {
     display: none
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+	.video {
+    margin-top: 33%;
+}
 }
