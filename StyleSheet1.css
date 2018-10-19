@@ -38,13 +38,7 @@ h1{
    
 }
 .jyst {
-    
-    position:fixed;
-    margin-bottom:5px;
-    top: 926px;
-    
-    height: 50px;
-    width: 70px;
+    margin-top: 10%;
  }
 
 .steam a:hover {
