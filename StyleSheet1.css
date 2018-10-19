@@ -20,7 +20,7 @@ h1{
 
 .container {
     height: 100%;
-	margin-top: 20%;
+	margin-top: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +38,7 @@ h1{
    
 }
 .jyst {
-    margin-top: 10%;
+    margin-top: 5%;
  }
 
 .steam a:hover {
@@ -50,6 +50,10 @@ h1{
     color: lawngreen;
     font-size: 50px;
     
+}
+.title {
+	font-family:Computerfont;
+	color: lawngreen;
 }
 
 #fade {
