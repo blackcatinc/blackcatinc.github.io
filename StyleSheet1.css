@@ -39,13 +39,13 @@ h1{
 }
 .jyst {
     
-    position:absolute;
+    position:fixed;
     margin-bottom:5px;
     top: 926px;
-    left: 0px;
-    height: 33px;
+    
+    height: 50px;
     width: 70px;
-}
+ }
 
 .steam a:hover {
     font-weight: bolder;
