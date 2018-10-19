@@ -67,9 +67,11 @@ h1{
 
 	.container  {
   
-  top: 50%;
- 
-
+ height: 100%;
+	margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 }
