@@ -20,6 +20,7 @@ h1{
 
 .container {
     height: 100%;
+	margin-top: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +67,16 @@ h1{
   and (-webkit-min-device-pixel-ratio: 2) { 
 
 
-	.video {
-    margin-top: 33%;
+	.container  {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+    
 }
 }
