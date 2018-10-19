@@ -38,8 +38,8 @@ h1{
    
 }
 .jyst {
-    float:center;
-    position:fixed;
+    
+    position:absolute;
     margin-bottom:5px;
     top: 926px;
     left: 0px;
@@ -63,19 +63,14 @@ h1{
 }
 @media only screen 
   and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
+  and (max-device-width: 900px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 
 
 	.container  {
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-
-
-  position: relative;
+  
   top: 50%;
-  transform: translateY(-50%);
+ 
 
     
 }
