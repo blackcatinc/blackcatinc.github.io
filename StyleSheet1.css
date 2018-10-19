@@ -15,6 +15,7 @@ body {
 }
 h1{
     color:lawngreen;
+	font-size:80px;
 }
 
 .container {
@@ -25,7 +26,7 @@ h1{
    
 }
 .video {
-    margin-top: 20%;
+    margin-top: 5%;
 }
 .steam {
     margin-top: 3%;
@@ -33,16 +34,16 @@ h1{
     width: 365px;
     font-family:Computerfont;
     color:lawngreen;
-    font-size:50px;
+   
 }
 .jyst {
     float:center;
     position:fixed;
-    margin-bottom:0px;
+    margin-bottom:5px;
     top: 926px;
     left: 0px;
     height: 33px;
-    width: 50px;
+    width: 70px;
 }
 
 .steam a:hover {
@@ -59,11 +60,12 @@ h1{
 #fade {
     display: none
 }
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
-    }
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+
 	.video {
     margin-top: 33%;
 }

@@ -183,7 +183,8 @@ a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
 }
 
 a:not([href]):not([tabindex]):focus {
-  outline: 0;
+	outline: 0;
+	font-size: 50px;
 }
 
 pre,
@@ -366,7 +367,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 2.5rem;
+	font-size: 83px;
 }
 
 h2, .h2 {
