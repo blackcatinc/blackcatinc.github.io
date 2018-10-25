@@ -67,7 +67,7 @@ h1{
 body {
 
  
-  background: url('images/background2.png') cover center center fixed; 
+  background: url('images/background2.png') repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -77,7 +77,7 @@ body {
 	.container  {
   
  height: 100%;
-	margin-top: 5%;
+	margin-top: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
