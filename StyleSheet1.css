@@ -65,7 +65,7 @@ h1{
   and (-webkit-min-device-pixel-ratio: 2) { 
 
 body {
-
+background-image: none;
  
  background-color: black;
 
